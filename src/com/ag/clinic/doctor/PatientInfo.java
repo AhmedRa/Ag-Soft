@@ -218,11 +218,11 @@ public class PatientInfo extends javax.swing.JPanel {
                                     .addComponent(jLabel3))
                                 .addGap(28, 28, 28)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lpatientId, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 0, Short.MAX_VALUE))
                                     .addComponent(TfPatientName)
-                                    .addComponent(TfPatientPhone))))
+                                    .addComponent(TfPatientPhone)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lpatientId, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE)))))
                         .addGap(100, 100, 100))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -335,6 +335,6 @@ public class PatientInfo extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JLabel lpatientId;
+    public static javax.swing.JLabel lpatientId;
     // End of variables declaration//GEN-END:variables
 }

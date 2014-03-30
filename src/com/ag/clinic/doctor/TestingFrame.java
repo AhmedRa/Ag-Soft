@@ -18,7 +18,9 @@ public class TestingFrame extends javax.swing.JFrame {
     public TestingFrame() {
         initComponents();
         jTabbedPane1.add("patient info", new PatientInfo(1));
-        jTabbedPane1.add("patient info II", new PatientInfo_ver2(1));
+       // jTabbedPane1.add("patient info II", new PatientInfo_ver2(1));
+       jTabbedPane1.add("Vaccination", new Vaccination());
+       jTabbedPane1.add("Longtermmedication", new Longtermmedication());
     }
 
     /**

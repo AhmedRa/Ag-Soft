@@ -156,12 +156,10 @@ public class Search extends javax.swing.JFrame {
         // TODO add your handling code here:
          conn= new DB().getMySqlConn();
       
-        String query2= "SELECT * FROM patient WHERE patient_id="+IDNUM.getText();       
-                
+        String query2= "SELECT * FROM patient WHERE patient_id="+IDNUM.getText();      
                 
         try{
      
-      
         st = conn.createStatement();
         res = st.executeQuery(query2);
         while(res.next()){
