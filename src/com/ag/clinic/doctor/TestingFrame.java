@@ -4,9 +4,10 @@ public class TestingFrame extends javax.swing.JFrame {
 
     public TestingFrame() {
         initComponents();
-        jTabbedPane1.add("patient info", new PatientInfo(1));
+//        jTabbedPane1.add("patient info", new PatientInfo(1));
         jTabbedPane1.add("patient info II", new PatientInfo_ver2(1));
         jTabbedPane1.add("Growth", new Growth(1));
+        jTabbedPane1.add("visits", new PatientVisit(1));
     }
 
     @SuppressWarnings("unchecked")
