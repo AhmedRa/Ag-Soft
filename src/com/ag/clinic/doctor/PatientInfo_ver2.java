@@ -8,8 +8,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-/**
+/**clo
  *
  * @author osama
  */
@@ -29,6 +31,12 @@ public class PatientInfo_ver2 extends javax.swing.JPanel {
             setData();
         } catch (SQLException ex) {
             System.out.println("filling data faileur");
+            try {
+                con.close();
+            } catch (SQLException ex1) {
+                System.out.println("coludn't close connection");
+                ex.printStackTrace();
+            }
             ex.printStackTrace();
         }
     }
