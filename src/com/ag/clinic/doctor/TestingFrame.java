@@ -8,6 +8,7 @@ public class TestingFrame extends javax.swing.JFrame {
        // jTabbedPane1.add("patient info II", new PatientInfo_ver2(1));
        jTabbedPane1.add("Vaccination", new Vaccination());
        jTabbedPane1.add("Longtermmedication", new Longtermmedication());
+      jTabbedPane1.add("Presentation", new Presentation());
     }
 
     @SuppressWarnings("unchecked")
