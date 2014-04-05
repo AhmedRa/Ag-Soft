@@ -246,6 +246,7 @@ public class Container extends javax.swing.JFrame {
         jTabbedPane1.add("patient info", new PatientInfo_ver2(patientId));
         jTabbedPane1.add("growth", new Growth(patientId));
         jTabbedPane1.add("Visits", new PatientVisit(patientId));
+        
     }//GEN-LAST:event_tableMouseReleased
 
     public static void main(String args[]) {

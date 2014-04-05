@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 
-package com.ag.clinic.doctor;
+package com.ag.clinic.login;
 
 import java.awt.Color;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import com.ag.clinic.DB.*;
+import com.ag.clinic.doctor.Container;
+import com.ag.clinic.reception.ReceptionFull;
 import java.sql.SQLException;
 
 /**
@@ -316,8 +318,15 @@ public class Login extends javax.swing.JFrame {
             if (res.next()) {
                 this.setVisible(false);
                 liddd.setText(idd);
-                Search m = new Search();
-                m.setVisible(true);
+               if(Integer.parseInt(idd)==2){
+                   ReceptionFull r=new ReceptionFull();
+                   r.setVisible(true);
+               }else{
+               Container c=new Container();
+               c.setVisible(true);
+               
+               }
+                
             }else{
                 passreq.setText("ادخل كلمه سر صحيحه ");
             }
